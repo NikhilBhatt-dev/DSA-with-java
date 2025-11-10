@@ -9,7 +9,7 @@
         for (int row = 1; row <= n; row++) {
              // for every row , run the column
             for( int col = 1; col <= row; col++){
-                System.out.print( col );
+                System.out.print( col + " ");
                  
             }  
             // one row is printed we ned to add a newline          
