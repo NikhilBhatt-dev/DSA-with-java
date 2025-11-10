@@ -8,7 +8,7 @@ public class Pattern6 {
             int totalColsInRow = row > n ? 2 * n - row : row;
             int noOfSpaces = n - totalColsInRow;
 
-            // Print spaces
+            // Print spaces in row 
             for (int s = 0; s < noOfSpaces; s++) {
                 System.out.print(" ");
             }
