@@ -1,4 +1,6 @@
-public class Main {
+package Recursion;
+
+public class Message {
     public static void main(String[] args) {
         message(5);
         // write a function hello world
