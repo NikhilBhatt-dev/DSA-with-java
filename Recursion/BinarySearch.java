@@ -9,7 +9,7 @@ public interface BinarySearch {
     static int search( int[] arr , int target, int s ,int e){
         
 
-        if (s> e) {
+       if (s> e) {
             return -1;
             
         }
