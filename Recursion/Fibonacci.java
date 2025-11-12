@@ -1,7 +1,8 @@
 public class Fibonacci {
     public static void main(String[] args) {
         int n = 8;
-        System.out.print("Fibonacci series  up to " + n + ": ");
+
+        System.out.print("Fibonacci series up to " + n + ": ");
         for (int i = 0; i < n; i++) {
             System.out.print(fibo(i) + " ");
         }
