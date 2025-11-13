@@ -1,12 +1,12 @@
-#include <stdio.h>
-
+#include <stdio.h> 
+#define MAX 100
 int main() {
     int n, i, j;
 
     printf("Enter number of activities: ");
     scanf("%d", &n);
+    int start[MAX],  finish[MAX];
 
-    int start[n], finish[n];
 
     printf("Enter start times:\n");
     for(i = 0; i < n; i++)
