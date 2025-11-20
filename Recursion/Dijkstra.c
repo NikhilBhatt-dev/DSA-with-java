@@ -29,14 +29,14 @@ int main() {
         distance[i] = graph[source][i];
         visited[i] = 0;
     }
-    distance[source] = 0;  // Distance to itself is zero
+    distance[source] = 0;  
     visited[source] = 1;
 
-    // Dijkstra algorithm
+   
     for (int count = 1; count < n; count++) {
         int min = INF, nextNode = -1;
 
-        // Find minimum distance vertex not visited
+        
         for (int i = 0; i < n; i++) {
             if (!visited[i] && distance[i] < min) {
                 min = distance[i];
