@@ -9,7 +9,7 @@ public class Fibo {
 
     static int FiboFormula( int n) {
     //   return (int) ((Math.pow( ((1 + Math.sqrt(5))/2) , n) - Math.pow(((1 - Math.sqrt(5))/2) , n)) / Math.sqrt(5)) ;
-    return (int) (Math.pow(((1 + Math.sqrt(5)) / 2), n) / Math.sqrt(5));
+    return (int) (Math.pow(((1 + Math.sqrt(5)) / 2), n) / Math.sqrt(5));// sort version
     }
 
     static int Fibo (int n) {
