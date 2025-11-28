@@ -2,3 +2,4 @@ learning math of dsa
 opreator
 Number System
 conversion
+update file 
