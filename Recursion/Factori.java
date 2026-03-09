@@ -10,6 +10,6 @@ public class Factori {
             return 1;
         }
 
-        return n * facto(n-1);
+        return n + facto(n-1);
     }
 }
