@@ -4,7 +4,7 @@ public class BubbleSort {
 
     public static void main(String[] args) {
         int[] arr = {1, 23, 4, 6};
-        bubble(arr, arr.length, 0);
+        bubble(arr, arr.length-1, 0);
         System.out.println(Arrays.toString(arr));
     }
 
@@ -14,7 +14,7 @@ public class BubbleSort {
             return;
         }
 
-        if (c < r - 1) {
+        if (c < r ) {
 
             if (arr[c] > arr[c + 1]) {
 
