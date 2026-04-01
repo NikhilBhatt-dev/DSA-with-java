@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Maze",
+            "request": "launch",
+            "mainClass": "Maze",
+            "projectName": "DSA-WITH-JAVA_50786c96"
+        },
+        {
+            "type": "java",
+            "name": "NQueen",
+            "request": "launch",
+            "mainClass": "NQueen",
+            "projectName": "DSA-WITH-JAVA_50786c96"
+        },
+        {
+            "type": "java",
             "name": "SubSetRet",
             "request": "launch",
             "mainClass": "SubSetRet",
