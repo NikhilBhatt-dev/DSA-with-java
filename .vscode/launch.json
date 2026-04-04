@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NQueen",
+            "request": "launch",
+            "mainClass": "Backtracking.NQueen",
+            "projectName": "DSA-WITH-JAVA_50786c96"
+        },
+        {
+            "type": "java",
             "name": "Maze",
             "request": "launch",
             "mainClass": "Maze",
