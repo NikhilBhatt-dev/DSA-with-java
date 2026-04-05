@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Greeting",
+            "request": "launch",
+            "mainClass": "Package.Greeting",
+            "projectName": "DSA-WITH-JAVA_50786c96"
+        },
+        {
+            "type": "java",
+            "name": "Greeting",
+            "request": "launch",
+            "mainClass": "Function.Greeting",
+            "projectName": "DSA-WITH-JAVA_50786c96"
+        },
+        {
+            "type": "java",
             "name": "NQueen",
             "request": "launch",
             "mainClass": "Backtracking.NQueen",
