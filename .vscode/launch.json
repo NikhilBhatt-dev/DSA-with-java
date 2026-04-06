@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "InnerClass",
+            "request": "launch",
+            "mainClass": "staticExample.InnerClass",
+            "projectName": "DSA-WITH-JAVA_50786c96"
+        },
+        {
+            "type": "java",
             "name": "StaticBlock",
             "request": "launch",
             "mainClass": "staticExample.StaticBlock",
