@@ -10,7 +10,7 @@ public class InnerClass {
     }
 
     public static void main(String[] args) {
-    Test a = new Test("nikhil"); 
+    Test a = new Test("nikhil");  
     Test b = new Test("bhatt");
     System.out.println(a.name + " " + b.name);
     }
