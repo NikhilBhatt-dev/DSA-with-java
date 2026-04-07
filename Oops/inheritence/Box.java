@@ -5,7 +5,7 @@ public class Box{
     double l;
     double w;
     double h;
-    Box(){
+    Box(){//defualt constructor
         this.l=-1;
         this.w=-1;
         this.h=-1;
@@ -25,7 +25,7 @@ public class Box{
     }
     
 
-    Box(Box old){
+    Box(Box old){//copy of box
         this.l=old.l;
         this.w=old.w;
         this.h=old.h;
