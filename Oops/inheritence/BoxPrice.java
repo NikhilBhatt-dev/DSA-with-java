@@ -19,5 +19,10 @@ public BoxPrice(double l, double w, double h, double cost) {
     
 }
 
+public BoxPrice(double side, double weight, double cost) {
+    super(side, weight);
+    this.cost = cost;
 
+
+}
 }
