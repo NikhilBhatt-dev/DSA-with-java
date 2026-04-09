@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Number",
+            "request": "launch",
+            "mainClass": "Polymophism.Number",
+            "projectName": "DSA-WITH-JAVA_50786c96"
+        },
+        {
+            "type": "java",
             "name": "Main",
             "request": "launch",
             "mainClass": "Polymophism.Main",
