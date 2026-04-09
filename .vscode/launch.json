@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ObjectPrint",
+            "request": "launch",
+            "mainClass": "Polymophism.ObjectPrint",
+            "projectName": "DSA-WITH-JAVA_50786c96"
+        },
+        {
+            "type": "java",
             "name": "Number",
             "request": "launch",
             "mainClass": "Polymophism.Number",

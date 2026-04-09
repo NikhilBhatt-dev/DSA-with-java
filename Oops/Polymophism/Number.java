@@ -14,7 +14,8 @@ public class Number {
     }
     public static void main(String[] args) {
         Number number = new Number();
-        number.sum(2, 3);
-        number.sum(2, 3, 4);
+        
+        System.out.println(number.sum(2, 3));
+        System.out.println(number.sum(2, 3, 4));
     }
 }
