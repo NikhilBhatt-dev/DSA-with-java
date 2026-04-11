@@ -3,9 +3,13 @@ package access;
 public class ObjectDemo {
 
     int num;
+    // String name;
+    float gpa;
 
-    public ObjectDemo(int num) {
+    public ObjectDemo(int num, String name, float gpa) {
         this.num = num;
+        // this.name = name;
+        this.gpa = gpa;
     }
 
     @Override
@@ -34,7 +38,11 @@ public class ObjectDemo {
     }
 
     public static void main(String[] args) {
-        ObjectDemo obj = new ObjectDemo(34);
-        System.out.println(obj.hashCode());
+        ObjectDemo obj = new ObjectDemo(34,"nikhil", 3.5f);
+        ObjectDemo obj2 = new ObjectDemo(34,"nikhilbhatt", 3.55f);
+        
+        if(obj.equals(obj2)){
+            System.out.println("both not same");
+        }
     }
 }
