@@ -41,9 +41,22 @@ public class CustomArrayList{
         return removed;
     }
 
+    public int size(){
+        return size;
+    }
+
+    public int set(int index, int value) {
+        data[index] = value;
+        return data[index];
+
+    }
+
     public static void main(String[] args) {
-        ArrayList list = new ArrayList();
-        
-      
+        // ArrayList list = new ArrayList();
+        CustomArrayList list = new CustomArrayList();
+      list.add(3);
+      list.add(4);
+      list.add(5);
+      System.out.println(list);
     }
 }
