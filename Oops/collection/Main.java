@@ -10,12 +10,19 @@ public class Main{
         List<Integer> list2 = new LinkedList<>();
 
 
-        list2.add(22);
-        list.add(23);
+        // list2.add(22);
+        // list.add(23);
 
-        list.get(0);
-        System.out.println(list2);
-        list2.isEmpty();
+        // list.get(0);
+        // System.out.println(list2);
+        // list2.isEmpty();
+
+        List<Integer> vector = new java.util.Vector<>();
+        vector.add(34);
+        vector.add(45);
+        System.out.println(vector);
+
+
         
     }
 }
