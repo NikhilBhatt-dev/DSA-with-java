@@ -1,7 +1,6 @@
 
 public class LL {
 
-
     private Node head;
     private Node tail;
     private int size;
@@ -12,17 +11,27 @@ public class LL {
 
     public void insertFirst(int val) {
 
-       Node  node = new Node(val);
-       node.next = head;
-       head = node;
+        Node node = new Node(val);
+        node.next = head;
+        head = node;
 
-       if(tail == null ) {
-        tail = head;
-       }
-       size += 1;
+        if (tail == null) {
+            tail = head;
+        }
+        size += 1;
+    }
+
+    public void display() {
+        Node temp = head;
+        while (temp != null) {
+            System.out.println(temp.value + " -> ");
+            temp = temp.next;
+        }
+        System.out.println("end");
     }
 
     private class Node {
+
         private int value;
         private Node next;
 
@@ -31,7 +40,7 @@ public class LL {
         }
 
         public Node(int value, Node next) {
-            this.value = value;
+            this.value = val ue;
             this.next = next;
         }
     }
