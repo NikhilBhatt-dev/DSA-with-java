@@ -1,4 +1,5 @@
 
+
 public class LL {
 
     private Node head;
@@ -50,32 +51,43 @@ public class LL {
         Node node = new Node(val, temp.next);
         temp.next = node;
         size++;
-    
 
     }
 
-    public int deleteFirst(){
+    public int deleteFirst() {
         int val = head.value;
         head = head.next;
-        if(head == null){
+        if (head == null) {
             tail = null;
-            
+
         }
         size--;
         return val;
     }
 
-    public int deleteLast(){
-        int val = tail.value;
-        tail  = tail.next;
+    public int deleteLast() {
+        if (size <= 1) {
+            return deleteFirst();
 
-        if(head == null){
-            tail = null;
+                 }  
+            Node secondLast = get(size - 2);
+            int val = tail.value;
+            tail = secondLast;
+            tail.next = null;
+            return val;
         }
-        size--;
-        return val;
+    
+
+    public Node get(int index) {
+        Node node = head;
+        for (int i = 0; i < index; i++) {
+            node = node.next;
+
+        }
+        return node;
 
     }
+
     public void display() {
         Node temp = head;
         while (temp != null) {
