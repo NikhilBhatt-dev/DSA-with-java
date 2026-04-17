@@ -9,16 +9,19 @@ public class Main {
         list.insertFirst(3);
         list.insertFirst(4);
         list.insertFirst(6);
-        list.insertLast(99);
-        list.insertMid(33, 3);
 
-        list.deleteFirst();
-        list.display();
-        System.out.println("deletefirst");
-        list.deleteFirst();
-        list.display();
-        System.out.println("deletelast");
-        list .deleteLast();
+        // list.insertLast(99);
+        // list.insertMid(33, 3);
+
+        // list.deleteFirst();
+        // list.display();
+        // System.out.println("deletefirst");
+        // list.deleteFirst();
+        // list.display();
+        // System.out.println("deletelast");
+        // list .deleteLast();
+        // list.display();
+        list.deleteAny(2);
         list.display();
 
     }
