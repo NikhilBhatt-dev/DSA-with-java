@@ -99,6 +99,30 @@ public class LL {
         }
 
 
+        public int  deleteLast(){
+            if(size <= 1) {
+                return deleteFirst();
+            }
+            Node  secondLast = get(size - 2);
+            int val = tail.value;
+            tail = secondLast;
+            tail.next = null;
+            size--;
+            return val;
+        }
+        
+        public Node get(int index){
+            Node node  = head;
+            for (int i = 0; i < index ;i++) {
+                node  = node.next;
+                
+            }
+            return node;
+        }
+
+        public int deleteAtParticular(int index){
+
+        }
 
     public void display() {
         Node temp = head;
