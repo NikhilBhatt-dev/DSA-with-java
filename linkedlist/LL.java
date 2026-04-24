@@ -1,12 +1,12 @@
 
 public class LL {
-
+ 
     private Node head;
     private Node tail;
     private int size;
 
     public LL() {
-        this.size = 0;// this refer to the current object that is being created 
+        this.size = 0;// this refer to the current object that is being created  in LL class
     }
 
     public void insertFirst(int val) {
@@ -110,7 +110,22 @@ public class LL {
             size--;
             return val;
         }
-        
+    
+        public Node find(int value) {
+        Node node = head;
+        while (node != null) { 
+            
+        if(node.value ==  value){
+            return node;
+        }
+        node = node.next;
+        }
+        return null;
+    }
+
+
+
+
         public Node get(int index){
             Node node  = head;
             for (int i = 0; i < index ;i++) {
@@ -120,8 +135,23 @@ public class LL {
             return node;
         }
 
+
+
+
         public int deleteAtParticular(int index){
 
+            if(index == 0 ){
+                return deleteFirst();
+
+            }
+
+            if(index  == size -1){
+                return  deleteLast();
+            }
+            Node prev = get (index  -1);
+            int val = prev.next.value;
+            prev.next = prev.next.next;
+            return val;
         }
 
     public void display() {
@@ -139,7 +169,7 @@ public class LL {
         private Node next; // it store the address of the next node
 
         public Node(int value) {
-            this.value = value;
+            this.value = value;// use this when we dont know the next node like tail of list
         }
 
         public Node(int value, Node next) {
