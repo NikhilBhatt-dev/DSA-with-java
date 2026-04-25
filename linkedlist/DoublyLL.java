@@ -31,10 +31,29 @@ public class DoublyLL {
             System.out.println(last.val + " ->");
             last = last.prev;
         }
-        System.out.println( "");
+        System.out.println( "Start");
     }
 
     
+
+    public void insertLast(int val){
+
+        Node node =new Node(val);
+        Node last = head;
+
+        node.next = null;
+        if(head == null){
+            node.prev = null;
+            head = node;
+            return;
+        }
+        while (last.next !=null){
+            last = last.next;
+        }
+        last.next = node;
+        node.prev = last;
+
+    }
 
 
 private class Node {
