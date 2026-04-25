@@ -16,24 +16,25 @@ public class DoublyLL {
 
     public void display() {
         Node node = head;
+        Node last = null;
         while (node != null) {
             System.out.println(node.val + " ->");
+            last = node;
             node = node.next;
+            
 
         }
         System.out.println("end");
-    }
 
-    public void displayRev () {
-        Node node = head;
-        while (node != null) {
-            System.out.println(node.val + " ->");
-            node = node.next;
-
+        System.out.println("print in reverse");
+        while (last != null) {
+            System.out.println(last.val + " ->");
+            last = last.prev;
         }
-        System.out.println("end");
+        System.out.println( "");
     }
 
+    
 
 
 private class Node {
