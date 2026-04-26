@@ -20,16 +20,25 @@ public class Main {
     //    System.out.println(list.find(44));
     //    list.display();
 
-        DoublyLL list = new DoublyLL();
-        // list.insertFirst(23);
+        // DoublyLL list = new DoublyLL();
+        // // list.insertFirst(23);
 
-           list.insertFirst(44);
-           list.insertFirst(55);
+        //    list.insertFirst(44);
+        //    list.insertFirst(55);
+        // //    list.display();
+        //    list.insertLast(22);
         //    list.display();
-           list.insertLast(22);
-           list.display();
-           list.insertAtParticular(257, 44);
-           list.display();
+        //    list.insertAtParticular(257, 44);
+        //    list.display();
+
+        CLL list = new CLL();
+        list.insert(23);
+        list.insert(44);
+        list.insert(55);
+        list.display();
+
+        list.delete(55);
+        list.display();
 
 
        
