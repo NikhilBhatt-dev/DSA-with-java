@@ -56,6 +56,56 @@ public class DoublyLL {
     }
 
 
+    public Node find(int value) {
+        Node node = head;
+        while (node != null) {
+
+            if (node.val == value) {
+                return node;
+            }
+            node = node.next;
+        }
+        return null;
+    }
+
+    // public void insertAtParticular(int val,int after){
+    //     Node p = find(after);
+    //     if(p==null){
+    //         System.out.println("Node not found");
+    //         return;
+    //     }
+
+
+    //     Node node = new Node(val);
+    //     node.next = p.next;
+    //     p.next = node;
+    //     node.prev = p;
+    //     if(node.next!=null){
+    //     node.next.prev = node;
+    //     }
+
+    // }
+
+
+
+    public void insertAtParticular(int val, int after) {
+        Node p = find(after);
+        if (p == null) {
+            System.out.println("Node with value " + after + " not found");
+            return;
+        }
+
+        Node node = new Node(val);
+
+        node.next = p.next;   
+        node.prev = p;
+
+        if (p.next != null) {
+            p.next.prev = node;
+        }
+
+        p.next = node;
+    }
 private class Node {
 
     int val;

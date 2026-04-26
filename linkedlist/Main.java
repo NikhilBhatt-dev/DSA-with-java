@@ -21,12 +21,14 @@ public class Main {
     //    list.display();
 
         DoublyLL list = new DoublyLL();
-        list.insertFirst(23);
+        // list.insertFirst(23);
 
            list.insertFirst(44);
            list.insertFirst(55);
-           list.display();
+        //    list.display();
            list.insertLast(22);
+           list.display();
+           list.insertAtParticular(257, 44);
            list.display();
 
 
