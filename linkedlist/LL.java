@@ -115,7 +115,7 @@ public class LL {
                 size ++;
                 return temp;
             }
-            node.next = insertRec(val, index--, node.next);
+            node.next = insertRec(val, index-1, node.next);
             return node;
         }
 
@@ -200,5 +200,34 @@ public class LL {
             this.next = next;
         }
     }
+
+
+
+
+
+
+
+
+
+
+
+                // questions
+
+        public void DuplicateRemove(){
+            Node node  = head;
+
+            while(node.next !=null){
+                //agr equal hai to delete
+                if(node.value  == node.next.value) {
+                    node.next = node.next.next;
+                    size--;
+                }
+                else{
+                    node = node.next;
+                }
+            }
+            tail = node;
+           tail.next = null; 
+        }
 
 }

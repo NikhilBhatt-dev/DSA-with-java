@@ -2,10 +2,10 @@
 
 public class Main {
     public static void main(String[] args) {
-        // LL list =new LL();
-    //    list.insertFirst(23);
-    //    list.insertFirst(44);
-    //    list.insertFirst(55);
+        LL list =new LL();
+       list.insertFirst(23);
+       list.insertFirst(44);
+       list.insertFirst(55);
     //    list.display();
     //    list.insertAtLast(323);
     //    list.display();
@@ -31,13 +31,17 @@ public class Main {
         //    list.insertAtParticular(257, 44);
         //    list.display();
 
-        CLL list = new CLL();
-        list.insert(23);
-        list.insert(44);
-        list.insert(55);
-        list.display();
+        // CLL list = new CLL();
+        // list.insert(23);
+        // list.insert(44);
+        // list.insert(55);
+        // list.display();
 
-        list.delete(55);
+        // list.delete(55);
+        // list.display();
+    
+
+        list.insertRec(2, 1);
         list.display();
 
 
