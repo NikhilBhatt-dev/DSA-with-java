@@ -37,6 +37,43 @@ public class CycleQuestion {
         }
         return 0;
     }
+
+
+    public ListNode detectCycle(ListNode head){
+        int length = 0;
+        ListNode slow = head;
+        ListNode fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+
+            if (slow == fast) {
+               length =lengthOfCycle(slow);
+               break;
+            }
+
+        }
+
+        if( length == 0){
+            return null;
+        }
+        // find the start node
+        ListNode  f= head;
+        ListNode  s = head;
+       
+        while(length > 0){
+            s =s.next;
+            length--;
+        }
+        //keep moving both forward and they will meet  at cycle start 
+        while(f != s){
+            f = f.next;
+            s = s.next;
+        }
+        return s;
+    }
+
 }
 
 class ListNode {
