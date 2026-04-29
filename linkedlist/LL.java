@@ -1,4 +1,6 @@
 
+
+
 public class LL {
  
     private Node head;
@@ -87,7 +89,7 @@ public class LL {
 
 
         public int deleteFirst(){
-            int val = head.value;// store the current head vakue
+            int val = head.value;// store the current head value
 
             head = head.next; //update the head
             if(head == null){
@@ -228,6 +230,63 @@ public class LL {
             }
             tail = node;
            tail.next = null; 
+        }
+
+    
+
+
+
+
+        // merge two sorted linked list
+
+        public static LL merge(LL first, LL second){
+            Node f = first.head;
+            Node s  = second.head;
+
+            LL ans  = new LL();
+
+            while(f != null && s!=null){
+                if(f.value < s.value) { 
+                    ans.insertAtLast(f.value);
+                    f = f.next;
+                }
+                else { 
+                    ans.insertAtLast(s.value);
+                    s = f.next;
+                }
+            }
+
+            while(f != null){
+                ans.insertAtLast(f.value);
+                f = f.next;
+            }
+            while (s != null) {
+                ans.insertAtLast(s.value);
+                s = s.next;
+            }
+            return  ans;
+
+        }
+
+        public static void main(String[] args) {
+            LL first = new LL();
+            LL second = new LL();
+
+            first.insertAtLast(1);
+            first.insertAtLast(2);
+            first.insertAtLast(3);
+
+
+            second.insertAtLast(1);
+            second.insertAtLast(2);
+            second.insertAtLast(3);
+
+            LL ans  = LL.merge(first, second);
+            ans.display();
+
+
+            
+
         }
 
 }

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LL",
+            "request": "launch",
+            "mainClass": "LL",
+            "projectName": "DSA-WITH-JAVA_50786c96"
+        },
+        {
+            "type": "java",
             "name": "BinarySearch",
             "request": "launch",
             "mainClass": "BinarySearch",
