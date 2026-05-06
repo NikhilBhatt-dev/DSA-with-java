@@ -14,7 +14,7 @@ public class CycleQuestion {
         }
         return false;
     }
-
+ 
     public int lengthOfCycle(ListNode head) {
         ListNode slow = head;
         ListNode fast = head;
