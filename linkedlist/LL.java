@@ -268,6 +268,62 @@ public class LL {
 
         }
 
+                           // bubble sort
+        public void bubbleSort() {
+        bubbleSort(size - 1, 0);
+    }
+
+    private void bubbleSort(int row, int col) {
+        if (row == 0) {
+            return;
+        }
+
+        if (col < row) {
+            Node first = get(col);
+            Node second = get(col + 1);
+
+            if (first.value > second.value) {
+
+                // Case 1: first is head
+                if (first == head) {
+                    head = second;
+                    first.next = second.next;
+                    second.next = first;
+                } // Case 2: second is tail
+                else if (second == tail) {
+                    Node prev = get(col - 1);
+                    prev.next = second;
+                    tail = first;
+                    first.next = null;
+                    second.next = first;
+                } // Case 3: middle nodes
+                else {
+                    Node prev = get(col - 1);
+                    prev.next = second;
+                    first.next = second.next;
+                    second.next = first;
+                }
+            }
+
+            bubbleSort(row, col + 1);
+
+        } else {
+            bubbleSort(row - 1, 0);
+        }
+    }
+                                        // recursion reverse
+
+        private  void reverse(Node node){
+            if(node  ==  tail){
+                head = tail ;
+                return; 
+            }
+            reverse(node.next);
+            tail.next = node;
+            tail = node;
+            tail.next = null;
+
+        }
         public static void main(String[] args) {
             LL first = new LL();
             LL second = new LL();
@@ -284,6 +340,15 @@ public class LL {
             LL ans  = LL.merge(first, second);
             ans.display();
 
+            LL list = new LL();
+            for (int i = 7; i >0; i--) {
+                list.insertAtLast(i);
+                
+            }
+            list.display();
+            list.bubbleSort();
+            list.display();
+            
 
             
 
