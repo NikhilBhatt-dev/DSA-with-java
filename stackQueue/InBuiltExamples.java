@@ -2,6 +2,10 @@
 
 
 //stack is classs but queue is a interface
+//use stack queue whenn  =>
+// convert recurison program into itreation
+// store the answer so far
+// put some result for future use
 
 import java.util.LinkedList;
 import java.util.Queue;
