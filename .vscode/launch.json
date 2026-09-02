@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "InBulitExample",
+            "request": "launch",
+            "mainClass": "InBulitExample",
+            "projectName": "DSA-WITH-JAVA_dd87f979"
+        },
+        {
+            "type": "java",
             "name": "LL",
             "request": "launch",
             "mainClass": "LL",
