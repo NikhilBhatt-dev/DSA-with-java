@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ascii",
+            "request": "launch",
+            "mainClass": "Ascii",
+            "projectName": "DSA-WITH-JAVA_50786c96"
+        },
+        {
+            "type": "java",
             "name": "StackMain",
             "request": "launch",
             "mainClass": "StackMain",
