@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StringBufferExample",
+            "request": "launch",
+            "mainClass": "StringBufferExample",
+            "projectName": "DSA-WITH-JAVA_50786c96"
+        },
+        {
+            "type": "java",
+            "name": "StringBuffer",
+            "request": "launch",
+            "mainClass": "StringBuffer",
+            "projectName": "DSA-WITH-JAVA_50786c96"
+        },
+        {
+            "type": "java",
+            "name": "SegmentTree",
+            "request": "launch",
+            "mainClass": "SegmentTree",
+            "projectName": "DSA-WITH-JAVA_50786c96"
+        },
+        {
+            "type": "java",
             "name": "BinaryTree",
             "request": "launch",
             "mainClass": "BinaryTree",
